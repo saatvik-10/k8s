@@ -4,7 +4,8 @@ kind delete cluster --name local
 kubectl get nodes (running nodes)
 kubectl get pods (logs)
 kubectl get pods --v=8 (logs more verbose)
-kubectl run <give_any_name> --image=<image_name> --port=<port_num>
+kubectl run <give_any_name> --image=<image_name> --port=<port_num> [not a proper way to start a pod]
+kubectl apply -f <manifest_file>.yml [correct way]
 kubectl get pods -w
 kubectl get pods -f
 kubectl describe pod <name_given>
