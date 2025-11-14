@@ -9,4 +9,4 @@ kubectl apply -f <manifest_file>.yml [correct way]
 kubectl get pods -w
 kubectl get pods -f
 kubectl describe pod <name_given>
-kubectl delete pod <name_given>
+kubectl delete pod <name_given> 
