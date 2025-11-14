@@ -10,3 +10,4 @@ kubectl get pods -w
 kubectl get pods -f
 kubectl describe pod <name_given>
 kubectl delete pod <name_given> 
+kubectl get replicaset
