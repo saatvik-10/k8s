@@ -8,9 +8,14 @@ kubectl run <give_any_name> --image=<image_name> --port=<port_num> [not a proper
 kubectl apply -f <manifest_file>.yml [correct way]
 kubectl get pods -w
 kubectl get pods -f
+kubectl get pods -owide
 kubectl describe pod <name_given>
 kubectl delete pod <name_given> 
 kubectl get replicaset <rs_name>
 kubectl get deployment <deployment_name>
-kubectl  rollout deployment/<deployment_name> --to-revision=<version_number>
+kubectl rollout deployment/<deployment_name> --to-revision=<version_number>
 kubectl scale deployment <deployment_name> --replicas <rs_num>
+
+labels: <label_name> -> one of the most important shit
+
+nodeport range: 30000–32767
