@@ -12,3 +12,5 @@ kubectl describe pod <name_given>
 kubectl delete pod <name_given> 
 kubectl get replicaset <rs_name>
 kubectl get deployment <deployment_name>
+kubectl  rollout deployment/<deployment_name> --to-revision=<version_number>
+kubectl scale deployment <deployment_name> --replicas <rs_num>
