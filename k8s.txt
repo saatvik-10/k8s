@@ -1,6 +1,9 @@
 kind create cluster --config clusters.yml --name local
 kind delete cluster --name local
 
+nginx-ingress-controller
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.1/deploy/static/provider/cloud/deploy.yaml
+
 kubectl get nodes (running nodes)
 kubectl get pods (logs)
 kubectl get pods --v=8 (logs more verbose)
