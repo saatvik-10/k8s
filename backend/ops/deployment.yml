@@ -25,6 +25,6 @@ spec:
               key: PORT
         - name: DATABASE_URL
           valueFrom:
-            configMapKeyRef:
+            secretKeyRef:
               name: k8s-backend
               key: DATABASE_URL
