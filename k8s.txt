@@ -20,9 +20,12 @@ kubectl rollout deployment/<deployment_name> --to-revision=<version_number>
 kubectl scale deployment <deployment_name> --replicas <rs_num>
 kubectl get pods -n <namespace_name>
 kubectl delete pod nginx -n <namespace_name>
+kubectl get configmaps
 
 labels: <label_name> -> one of the most important shit
 
 nodeport range: 30000–32767
 
 In the case of LoadBalancers, an external load balancer will be provisioned and you will be charged separately for that
+
+Config Maps- non-confidential data in a key:value pair

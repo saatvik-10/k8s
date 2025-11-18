@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: k8s- 
+data:
+  PORT: "8080"
+  DATABASE_URL: "postgres://postgres:mySecret/localhost:5432"
