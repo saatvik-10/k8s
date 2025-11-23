@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
     - name: nginx
-      image: saatvik10/k8s-e2e
+      image: saatvik10/k8s-e2e:1eef3af1c456188b4f5aa31706a8054610d54505
       ports:
         - containerPort: 80
