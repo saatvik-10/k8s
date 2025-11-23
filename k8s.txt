@@ -22,6 +22,10 @@ kubectl get pods -n <namespace_name>
 kubectl delete pod nginx -n <namespace_name>
 kubectl get configmaps
 
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+kubectl top pod
+kubectl top nodes
+
 labels: <label_name> -> one of the most important shit
 
 nodeport range: 30000–32767
